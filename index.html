@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setUsername(){
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value;
+
+        }
+        function setProfileImge(){
+            document.getElementById("profileImge").style.backgroundImage = "url(" + document.getElementById("Image").value + ")";
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile" id="profileImge">
+            </div>
+            <div class="noti">6
+            </div>
+        </div>
+        <div class="username">
+            <a href="https://github.com/Panavat0113" class="on-hover"><p id="username-p">
+                Panavat Thamcharoen</p></a>
+        </div>
+        <div class="inputgroup">
+            <div><label style="font-weight: 400;">Username</label><input style="margin-left: 10px;" type="text" id="username"><button id="setUsername" onclick="setUsername()">Apply</button></div>
+            <div><label style="font-weight: 400;">Profile Image</label><input style="margin-left: 10px;" type="text" id="Image"><button id="setUsername" onclick="setProfileImge()">Apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span"><img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" class="img"></div>
+            <div class="gallery-item"><img src="https://media.newyorker.com/photos/62c4511e47222e61f46c2daa/4:3/w_2663,h_1997,c_limit/shouts-animals-watch-baby-hemingway.jpg" class="img"></div>
+            <div class="gallery-item"><img src="https://www.balisafarimarinepark.com/wp-content/uploads/2022/06/IMG_8164-1-scaled-1200x1200-cropped.jpg" class="img"></div>
+            <div class="gallery-item"><img src="https://www.awsfzoo.com/media/IMG_3031.jpg" class="img"></div>
+            <div class="gallery-item"><img src="https://cdn.firstcry.com/education/2022/11/26141737/Animal-Name-Starting-With-L-For-Kids.jpg" class="img"></div>
+            <div class="gallery-item"><img src="https://aldf.org/wp-content/uploads/2018/05/lamb-iStock-665494268-16x9-e1559777676675-1200x675.jpg" class="img"></div>
+            <div class="gallery-item"><img src="https://www.awsfzoo.com/media/capy1.png" class="img"></div>
+            <div class="gallery-item row-span"><img src="https://cff2.earth.com/uploads/2022/09/12065513/Zoo-animals-scaled.jpg" class="img"></div>
+            <div class="gallery-item"><img src="https://www.marwell.org.uk/wp-content/uploads/2021/10/Credit-PhotosByGemma-Hartmanns-foal-Aziza-1-1.jpg" class="img"></div>
+            <div class="gallery-item"><img src="https://images.ctfassets.net/81iqaqpfd8fy/2366GpziV2sWMsAOWiCMy6/0f882d9f783acc9ff88d8163d1194e1e/Animal_Testing.jpg?fm=webp&h=620&w=1440" class="img"></div>
+            <!-- <div class="gallery-item"></div>
+            <div class="gallery-item"></div> -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    background-color: gray;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid rgb(255, 255, 255);
+    width:  1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.on-hover{
+    text-decoration: none;
+    color: black;
+}
+.on-hover:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    background-image: url(https://img.freepik.com/premium-vector/zoo-gate-icon-black-white_755164-13783.jpg);
+    border: 3px solid white;
+    border-radius: 9999px;
+    width: 192px;
+    height: 192px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.noti {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    background-color: red;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    right: 0;
+    bottom: 0;
+    font-size: x-large;
+    color: white;
+    font-weight: 600;
+}
+.username {
+    font-size: large;
+    font-weight: 600;
+}
+
+.inputgroup {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+
+.gallery {
+    display: grid;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 25px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
+}
+.gallery-item {
+    background-color: gray;
+    border: 3px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+.col-span{
+    grid-column: span 2 / span 2;
+}
+
+.row-span{
+    grid-row: span 2 / span 2;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
